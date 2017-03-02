@@ -11,7 +11,7 @@ public class Profile {
         
         port(Integer.valueOf(portString));
         
-        staticFileLocation("/webapp");
+        staticFileLocation("/public");
         
         get("/", (request, response) -> {
             response.redirect("homepage.html");
